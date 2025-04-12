@@ -1,0 +1,39 @@
+/* Baseplate */
+
+body {
+    font-family: "Poppins";
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: h2 = 1.802rem;
+}
+
+h3 {
+    font-size: h3 = 1.266rem;
+}
+
+/* Header */
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper nav li {
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+.wrapper nav ul {
+    display: flex;
+}
