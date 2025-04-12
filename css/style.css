@@ -90,3 +90,66 @@ header img {
     border-radius: 5px;
     grid-area: div4;
 }
+
+/* Intro */
+
+#affair .wrapper {
+    padding-bottom: 40px;
+}
+
+#affair h4 {
+    margin-bottom: 0px;
+}
+
+#affair .description {
+    margin-top: 0px;
+}
+
+#affair a:link, 
+#affair a:visited {
+    padding: .6em 1em;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 10px;
+}
+
+/* Backstory */
+
+#behind .wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: #f8fafc;
+}
+
+/* Reviews */
+
+#reviews .wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    color: white;
+    background-color: black;
+}
+
+/* Options */
+
+#options .wrapper {
+    
+}
+
+/* Footer */
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: black;
+    color: white;
+
+    font-size: 0.8rem;
+
+    text-align: center;
+}
