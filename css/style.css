@@ -18,6 +18,7 @@ h1 {
 
 h2 {
     font-size: 1.802rem;
+    text-align: center;
 }
 
 h3 {
@@ -134,10 +135,34 @@ header img {
     background-color: black;
 }
 
+#reviews .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+#reviews .grid article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 /* Options */
 
-#options .wrapper {
-    
+#options .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#options .image {
+    text-align: center;
+    background-color: #f8fafc;
+    border-radius: 10px;
+}
+
+#options img{
+    width: 100%;
 }
 
 /* Footer */
@@ -145,6 +170,8 @@ header img {
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
+
+    margin-top: 50px;
 
     background-color: black;
     color: white;
