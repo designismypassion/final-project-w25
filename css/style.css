@@ -7,6 +7,9 @@ body {
 .wrapper {
     max-width: 1200px;
     margin: auto;
+
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 h1 {
@@ -14,11 +17,11 @@ h1 {
 }
 
 h2 {
-    font-size: h2 = 1.802rem;
+    font-size: 1.802rem;
 }
 
 h3 {
-    font-size: h3 = 1.266rem;
+    font-size: 1.266rem;
 }
 
 /* Header */
@@ -27,13 +30,63 @@ header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+header img {
+    width: 100%;
+}
+
+.wrapper a:link,
+.wrapper a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 .wrapper nav li {
     flex-wrap: wrap;
     margin-left: 50px;
+    list-style-type: none;
+    font-size: 1rem;
 }
 
 .wrapper nav ul {
     display: flex;
+}
+
+/* Products */
+
+#products .images {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "div1 div1 div1"
+    "div2 div3 div4";
+}
+
+#products .image1 {
+    width: 100%;
+    border-radius: 5px;
+    grid-area: div1;
+}
+
+#products .image2 {
+    width: 100%;
+    border-radius: 5px;
+    grid-area: div2;
+}
+
+#products .image3 {
+    width: 100%;
+    border-radius: 5px;
+    grid-area: div3;
+}
+
+#products .image4 {
+    width: 100%;
+    border-radius: 5px;
+    grid-area: div4;
 }
