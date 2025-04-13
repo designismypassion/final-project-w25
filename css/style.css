@@ -57,9 +57,9 @@ header img {
     display: flex;
 }
 
-/* Products */
+/* Intro Images */
 
-#products .images {
+#affair .images {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
@@ -68,31 +68,31 @@ header img {
     "div2 div3 div4";
 }
 
-#products .image1 {
+#affair .image1 {
     width: 100%;
     border-radius: 5px;
     grid-area: div1;
 }
 
-#products .image2 {
+#affair .image2 {
     width: 100%;
     border-radius: 5px;
     grid-area: div2;
 }
 
-#products .image3 {
+#affair .image3 {
     width: 100%;
     border-radius: 5px;
     grid-area: div3;
 }
 
-#products .image4 {
+#affair .image4 {
     width: 100%;
     border-radius: 5px;
     grid-area: div4;
 }
 
-/* Intro */
+/* Intro Text */
 
 #affair .wrapper {
     padding-bottom: 40px;
@@ -125,6 +125,17 @@ header img {
     background-color: #f8fafc;
 }
 
+#behind .grid {
+    display: grid;
+    gap: 40px;
+}
+
+#reviews .grid article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 /* Reviews */
 
 #reviews .wrapper {
@@ -137,7 +148,6 @@ header img {
 
 #reviews .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -158,11 +168,14 @@ header img {
 #options .image {
     text-align: center;
     background-color: #f8fafc;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #options img{
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 /* Footer */
@@ -179,4 +192,59 @@ footer {
     font-size: 0.8rem;
 
     text-align: center;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    #behind .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #reviews .grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    #options .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 960px) {
+    #affair .images {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "div1 div2"
+        "div3 div4";
+
+        padding-right: 25px;
+    }
+    
+    #affair .image1 {
+        width: 100%;
+        grid-area: div1;
+    }
+    
+    #affair .image2 {
+        width: 100%;
+        border-radius: 5px;
+        grid-area: div2;
+    }
+    
+    #affair .image3 {
+        width: 100%;
+        border-radius: 5px;
+        grid-area: div3;
+    }
+    
+    #affair .image4 {
+        width: 100%;
+        border-radius: 5px;
+        grid-area: div4;
+    }
+
+    #affair .wrapper {
+        display:flex;
+    }
 }
